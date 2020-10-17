@@ -18,5 +18,6 @@ elif que_1 == "p":
     if c % 2 == 1:
         from math import *
         b = (ceil(loan_principal / c))
+        d = (loan_principal - b * 8)
 
-        print(b)
+        print("Your monthly payment = " + str(b) + " and last payment = " + str(d))
