@@ -14,9 +14,14 @@ if que_1 == "m":
 
 elif que_1 == "p":
     from math import *
-    c = (int(input("Enter the number of months: ")))
+    c = int(input("Enter the number of months: "))
     if c % 2 == 1:
         from math import *
-        b = (ceil(int(loan_principal / c)))
+        b = (ceil(loan_principal / c))
+        d = (loan_principal - b * 8)
 
-        print(b)
+        print("Your monthly payment = " + str(b) + " and the last payment = " + str(d) + ".")
+    if c % 2 == 0:
+        from math import *
+        e = int(loan_principal / c)
+        print("Your monthly payment = " + str(e))
